@@ -1,4 +1,3 @@
-import 'package:sixam_mart_store/features/splash/controllers/splash_controller.dart';
 import 'package:sixam_mart_store/features/store/domain/models/item_model.dart';
 import 'package:sixam_mart_store/features/order/domain/models/order_details_model.dart';
 import 'package:sixam_mart_store/features/order/domain/models/order_model.dart';
