@@ -1,11 +1,11 @@
 {
-    "name": "6amMart Vendor",
-    "short_name": "6amMart Vendor",
+    "name": "Full Care U Nursing Office",
+    "short_name": "Full Care U Nursing",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A multi-vendor multiple e-commerce web app.",
+    "description": "A multi-Nursing multiple e-commerce web app.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

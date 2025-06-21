@@ -2,7 +2,7 @@ import 'package:sixam_mart_store/features/language/domain/models/language_model.
 import 'package:sixam_mart_store/util/images.dart';
 
 class AppConstants {
-  static const String appName = '6amMart Vendor';
+  static const String appName = 'Full Care Nursing Office';
   static const double appVersion = 3.1; ///Flutter SDK: 3.29.3
 
   static const String fontFamily = 'Roboto';
@@ -244,7 +244,7 @@ class AppConstants {
   static const String customer = 'customer';
   static const String user = 'user';
   static const String deliveryMan = 'delivery_man';
-  static const String vendor = 'vendor';
+  static const String vendor = 'Nursing Office';
 
   /// Module Type
   static const String food = 'food';
