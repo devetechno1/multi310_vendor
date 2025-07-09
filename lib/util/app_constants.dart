@@ -2,14 +2,14 @@ import 'package:sixam_mart_store/features/language/domain/models/language_model.
 import 'package:sixam_mart_store/util/images.dart';
 
 class AppConstants {
-  static const String appName = 'Full Care Nursing Office';
+  static const String appName = 'Vendor Master';
   static const double appVersion = 3.1; ///Flutter SDK: 3.29.3
 
   static const String fontFamily = 'Roboto';
   static const double limitOfPickedVideoSizeInMB = 50;
   static const double maxSizeOfASingleFile = 10;
 
-  static const String baseUrl = 'https://devetechno-admin.6amtech.com';
+  static const String baseUrl = 'https://otlopna.com';
 
   static const String configUri = '/api/v1/config';
   static const String loginUri = '/api/v1/auth/vendor/login';
@@ -251,8 +251,6 @@ class AppConstants {
 
   static List<LanguageModel> languages = [
     LanguageModel(imageUrl: Images.english, languageName: 'English', countryCode: 'US', languageCode: 'en'),
-    LanguageModel(imageUrl: Images.arabic, languageName: 'Arabic', countryCode: 'SA', languageCode: 'ar'),
-    LanguageModel(imageUrl: Images.spanish, languageName: 'Spanish', countryCode: 'ES', languageCode: 'es'),
-    LanguageModel(imageUrl: Images.bangla, languageName: 'Bengali', countryCode: 'BN', languageCode: 'bn'),
+    LanguageModel(imageUrl: Images.arabic, languageName: 'عربي', countryCode: 'EG', languageCode: 'ar'),
   ];
 }
