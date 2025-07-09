@@ -1,4 +1,4 @@
-# Full Care Nursing Office App
+# Vendor Master App
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/sixamtech/6ammart-store-app.git
+git remote add origin https://gitlab.com/devetechno/devetechno-store-app.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/sixamtech/6ammart-store-app/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.com/devetechno/devetechno-store-app/-/settings/integrations)
 
 ## Collaborate with your team
 

@@ -47,8 +47,8 @@ class ProfileBgWidget extends StatelessWidget {
           ),
         ),
 
-        backButton ? Positioned(
-          top: MediaQuery.of(context).padding.top, left: 10,
+        backButton ? PositionedDirectional(
+          top: MediaQuery.of(context).padding.top, start: 10,
           child: IconButton(
             icon: Icon(Icons.arrow_back_ios, color: Theme.of(context).cardColor, size: 20),
             onPressed: () => Get.back(),

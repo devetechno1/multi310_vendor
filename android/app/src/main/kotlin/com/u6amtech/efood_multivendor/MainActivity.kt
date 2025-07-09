@@ -1,4 +1,4 @@
-package com.sixamtech.sixam_mart_store_app
+package com.devetechno.mastervendor
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -4,6 +4,7 @@ import 'package:sixam_mart_store/features/splash/controllers/splash_controller.d
 import 'package:sixam_mart_store/features/menu/domain/models/menu_model.dart';
 import 'package:sixam_mart_store/helper/responsive_helper.dart';
 import 'package:sixam_mart_store/helper/route_helper.dart';
+import 'package:sixam_mart_store/util/app_constants.dart';
 import 'package:sixam_mart_store/util/dimensions.dart';
 import 'package:sixam_mart_store/util/images.dart';
 import 'package:sixam_mart_store/features/menu/widgets/menu_button_widget.dart';
@@ -71,7 +72,7 @@ class MenuScreen extends StatelessWidget {
         ),
       );
     }
-    menuList.add(MenuModel(icon: Images.language, title: 'language'.tr, route: '', isLanguage: true));
+    if(AppConstants.languages.length > 1) menuList.add(MenuModel(icon: Images.language, title: 'language'.tr, route: '', isLanguage: true));
     menuList.add(MenuModel(icon: Images.coupon, title: 'coupon'.tr, route: RouteHelper.getCouponRoute()));
     menuList.add(MenuModel(icon: Images.expense, title: 'expense_report'.tr, route: RouteHelper.getExpenseRoute()));
 
