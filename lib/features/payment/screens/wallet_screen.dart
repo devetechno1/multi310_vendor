@@ -229,7 +229,7 @@ class _WalletScreenState extends State<WalletScreen> {
                             }
                           },
                           hoverColor: Colors.transparent,
-                          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                          child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
 
                             Text('withdraw_request'.tr, style: robotoMedium.copyWith(
                               color: bankController.selectedIndex == 0 ? Colors.blue : Theme.of(context).disabledColor,
@@ -255,7 +255,7 @@ class _WalletScreenState extends State<WalletScreen> {
                               bankController.setIndex(1);
                             }
                           },
-                          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                          child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
 
                             Text('payment_history'.tr, style: robotoMedium.copyWith(
                               color: bankController.selectedIndex == 1 ? Colors.blue : Theme.of(context).disabledColor,

@@ -22,6 +22,8 @@ import 'package:sixam_mart_store/util/images.dart';
 import 'package:sixam_mart_store/util/styles.dart';
 import 'package:video_player/video_player.dart';
 
+import '../../language/controllers/language_controller.dart';
+
 class CreateAdvertisementScreen extends StatefulWidget {
   final AdsDetailsModel? adsDetailsModel;
   final bool? fromCopy;
@@ -171,7 +173,7 @@ class _CreateAdvertisementScreenState extends State<CreateAdvertisementScreen> w
                           onTap:()async{
 
                             DateTimeRange? dateTimeRange = await showDateRangePicker(
-                              //locale: Get.find<LocalizationController>().locale,
+                                locale: Get.find<LocalizationController>().locale,
                                 initialEntryMode: DatePickerEntryMode.calendar,
                                 context: context,
                                 firstDate: DateTime.now(),

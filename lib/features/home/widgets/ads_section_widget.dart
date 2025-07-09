@@ -7,6 +7,8 @@ import 'package:sixam_mart_store/util/dimensions.dart';
 import 'package:sixam_mart_store/util/images.dart';
 import 'package:sixam_mart_store/util/styles.dart';
 
+import '../../language/controllers/language_controller.dart';
+
 class AdsSectionWidget extends StatelessWidget {
   const AdsSectionWidget({super.key});
 
@@ -52,21 +54,21 @@ class AdsSectionWidget extends StatelessWidget {
               ),
             ),
 
-            const Positioned(
-              top: 3, right: 3,
-              child: CustomAssetImageWidget(Images.adsRoundShape, height: 100, width: 100, color: Colors.white),
+            PositionedDirectional(
+              top: 3, end: 3,
+              child: CustomAssetImageWidget(Images.adsRoundShape, flipXImage: !Get.find<LocalizationController>().isLtr, height: 100, width: 100, color: Colors.white),
             ),
 
-            const Positioned(
-              bottom: 3, left: 3,
-              child: CustomAssetImageWidget(Images.adsCurveShape, height: 100, width: 100, color: Colors.white),
+            PositionedDirectional(
+              bottom: 3, start: 3,
+              child: CustomAssetImageWidget(Images.adsCurveShape,flipXImage: !Get.find<LocalizationController>().isLtr, height: 100, width: 100, color: Colors.white),
             ),
 
           ],
         ),
 
-        Positioned(
-          bottom: 15, left: 15,
+        PositionedDirectional(
+          bottom: 15, start: 15,
           width: 120,
           child: CustomButtonWidget(
             buttonText: 'create_ads'.tr,
@@ -78,9 +80,9 @@ class AdsSectionWidget extends StatelessWidget {
           ),
         ),
 
-        const Positioned(
-          top: 30, right: 15,
-          child:  CustomAssetImageWidget(Images.adsImage, height: 85, width: 98),
+        PositionedDirectional(
+          top: 30, end: 15,
+          child:  CustomAssetImageWidget(Images.adsImage, flipXImage: !Get.find<LocalizationController>().isLtr, height: 85, width: 98),
         ),
 
       ],

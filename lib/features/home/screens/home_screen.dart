@@ -21,6 +21,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';
 
+import '../../language/controllers/language_controller.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -471,7 +473,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     const SizedBox(width: Dimensions.paddingSizeSmall),
-                    const Icon(Icons.arrow_circle_right_rounded, color: Colors.white, size: 24,),
+                    Icon( 
+                      Get.find<LocalizationController>().isLtr 
+                        ? Icons.arrow_circle_right_rounded 
+                        : Icons.arrow_circle_left_rounded , 
+                      color: Colors.white, 
+                      size: 24,
+                    ),
                   ]),
                 ),
 
