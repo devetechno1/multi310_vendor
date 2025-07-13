@@ -8,8 +8,10 @@
 .buildlog/
 .history
 .svn/
+migrate_working_dir/
 
 # IntelliJ related
+*.jks
 *.iml
 *.ipr
 *.iws
@@ -30,8 +32,7 @@
 .pub-cache/
 .pub/
 /build/
-changes.zip
-changed_files.zip
+get_changed_files.sh
 
 # Web related
 lib/generated_plugin_registrant.dart
